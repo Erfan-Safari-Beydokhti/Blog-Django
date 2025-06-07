@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    {% block title %}{% endblock %}
+    {% block header_styles %}{% endblock %}
 </head>
 <body>
-
+{% block content %}{% endblock %}
+{% block footer_styles %}{% endblock %}
 </body>
 </html>
