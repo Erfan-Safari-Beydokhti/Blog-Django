@@ -1,11 +1,9 @@
 from django.shortcuts import render
 from django.views import View
 
-
-# Create your views here.
-class IndexView(View):
+def IndexView(request):
+    return render(request, 'blog/index.html')
+def PostsView(request):
     pass
-class PostsView(View):
-    pass
-class PostDetailView(View):
+def PostDetail(request, slug):
     pass
