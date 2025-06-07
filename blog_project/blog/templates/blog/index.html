@@ -1,8 +1,44 @@
 {% extends 'base.html' %}
 {% block title %}
-	My Blog
+    My Blog
 {% endblock %}
 
 {% block content %}
-	<h1>Welcome My Blog</h1>
+    <header>
+        <h1><a href="">My Blog</a></h1>
+        <nav>
+            <a href="">All Posts</a>
+        </nav>
+    </header>
+    <section id="welcome">
+        <header>
+            <img src="" alt="SuperUser - auther of this blog">
+            <h2>My Blog project</h2>
+        </header>
+        <p>Hi, My name is Erfan , I'm a python developer </p>
+    </section>
+
+    <section id="latest-posts">
+        <h2>Latest Posts </h2>
+        <ul>
+            <li>
+                <article class="post">
+                    <a href="">
+                        <img src="" alt="learning django">
+                        <div class="post__content">
+                            <h3>Learning Django</h3>
+                            <p>Learning Django with me </p>
+                        </div>
+                    </a>
+
+
+                </article>
+            </li>
+        </ul>
+    </section>
+    <section id="about">
+        <h2>What I Do</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque enim itaque repellat! A aperiam asperiores debitis dicta eveniet magnam maiores minima numquam officia perferendis quibusdam totam ut veniam vitae, voluptas?</p>
+    </section>
+
 {% endblock %}
