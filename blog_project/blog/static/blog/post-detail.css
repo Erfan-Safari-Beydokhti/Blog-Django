@@ -1,4 +1,4 @@
-/* کل صفحه‌ی پست */
+
 #summery {
     max-width: 800px;
     margin: 40px auto 20px;
@@ -43,7 +43,7 @@
     color: #888;
 }
 
-/* محتوای اصلی */
+
 main {
     max-width: 800px;
     margin: 0 auto 60px;
