@@ -1,0 +1,62 @@
+/* کل صفحه‌ی پست */
+#summery {
+    max-width: 800px;
+    margin: 40px auto 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+#summery h2 {
+    transform:rotateZ(5deg) ;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #212529;
+}
+
+#summery article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#summery img {
+    width: 500px;
+    height: auto;
+    border-radius: 8px;
+    transform:rotateZ(5deg) ;
+}
+
+#summery address {
+    transform:rotateZ(5deg) ;
+    font-style: normal;
+    color: #6c757d;
+    font-size: 14px;
+}
+
+#summery time {
+    transform:rotateZ(5deg) ;
+    font-size: 14px;
+    color: #888;
+}
+
+/* محتوای اصلی */
+main {
+    max-width: 800px;
+    margin: 0 auto 60px;
+    padding: 20px;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    line-height: 1.8;
+    font-size: 17px;
+    color: #343a40;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+main p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
