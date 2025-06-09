@@ -6,9 +6,9 @@
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'app.css' %}">
     <header>
-        <h1><a href="">My Blog</a></h1>
+        <h1><a href="{% url 'index' %}">My Blog</a></h1>
         <nav>
-            <a href="">All Posts</a>
+            <a href="{% url 'posts' %}">All Posts</a>
         </nav>
     </header>
     {% block header_styles %}
