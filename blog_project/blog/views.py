@@ -6,4 +6,4 @@ def IndexView(request):
 def PostsView(request):
     return render(request,'blog/all_post.html')
 def PostDetail(request, slug):
-    pass
+    return render(request,'blog/post-detail.html')
