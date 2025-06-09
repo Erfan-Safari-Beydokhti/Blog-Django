@@ -1,0 +1,74 @@
+/* بخش کلی پست‌ها */
+#all-posts {
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+#all-posts h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #212529;
+}
+
+/* لیست پست‌ها به صورت عمودی و وسط‌چین */
+#all-posts ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+/* پست تکی */
+.post {
+    width: 100%;
+    max-width: 600px; /* نصف صفحه یا کمتر */
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: left;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.post a {
+    display: flex;
+    color: inherit;
+    text-decoration: none;
+    width: 100%;
+}
+
+.post img {
+    width: 120px;
+    height: auto;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.post__content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.post__content h3 {
+    margin: 0;
+    font-size: 22px;
+    color: #343a40;
+}
+
+.post__content p {
+    margin-top: 10px;
+    color: #6c757d;
+    font-size: 15px;
+    line-height: 1.5;
+}
