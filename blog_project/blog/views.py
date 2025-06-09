@@ -36,8 +36,14 @@ all_posts=[
     },
 
 ]
+
+def get_date(post):
+    return post['date']
+
 def IndexView(request):
-    return render(request, 'blog/index.html')
+    sorted_posts=sorted(all_posts, key=get_date)
+    latest_posts=sorted_posts[-2:]
+    return render(request, 'blog/index.html', {'latest_posts':latest_posts})
 def PostsView(request):
     return render(request,'blog/all_post.html')
 def PostDetail(request, slug):
