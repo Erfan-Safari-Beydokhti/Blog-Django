@@ -49,12 +49,16 @@
 }
 
 .post img {
-    width: 120px;
+    width: 200px;
     height: auto;
     object-fit: cover;
     flex-shrink: 0;
 }
-
+@media (max-width: 768px) {
+    .post img {
+        width: 100px;
+    }
+}
 .post__content {
     padding: 20px;
     flex-grow: 1;

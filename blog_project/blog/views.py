@@ -45,6 +45,9 @@ def IndexView(request):
     latest_posts=sorted_posts[-2:]
     return render(request, 'blog/index.html', {'latest_posts':latest_posts})
 def PostsView(request):
-    return render(request,'blog/all_post.html')
+    context= {
+        'all_posts':all_posts,
+    }
+    return render(request,'blog/all_post.html',context)
 def PostDetail(request, slug):
     return render(request,'blog/post-detail.html')

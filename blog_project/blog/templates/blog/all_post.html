@@ -9,13 +9,15 @@
 {% endblock %}
 
 {% block content %}
-<section id="all-posts">
+    <section id="all-posts">
         <h2>**** </h2>
         <ul>
-            {% include 'blog/includes/post.html' %}
-            {% include 'blog/includes/post.html' %}
-            {% include 'blog/includes/post.html' %}
-            {% include 'blog/includes/post.html' %}
+            {% for post in all_posts %}
+                {% include 'blog/includes/post.html' %}
+
+            {% endfor %}
+
+
         </ul>
     </section>
 {% endblock %}
